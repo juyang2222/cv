@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ju-Yeong Park – CV</title>
+<link href="https://fonts.googleapis.com/css2?family=Linux+Libertine+O&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Linux Libertine O', 'Georgia', 'Times New Roman', serif;
+    font-size: 11pt;
+    line-height: 1.55;
+    color: #000;
+    background: #fff;
+    padding: 52px 48px 52px;
+    max-width: 860px;
+    margin: 0 auto;
+  }
+
+  .header-name {
+    font-size: 22pt;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 6px;
+  }
+
+  .header-contact {
+    text-align: center;
+    font-size: 10pt;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0 4px;
+  }
+  .header-contact a { color: #000; text-decoration: none; }
+  .header-contact a:hover { text-decoration: underline; }
+  .sep { color: #bbb; }
+
+  .section { margin-top: 20px; }
+
+  .section-title {
+    font-size: 11pt;
+    font-weight: bold;
+    border-bottom: 1px solid #000;
+    padding-bottom: 1px;
+    margin-bottom: 8px;
+  }
+
+  /* two-col row */
+  .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 16px;
+    margin-bottom: 10px;
+  }
+  .row:last-child { margin-bottom: 0; }
+  .row-left { flex: 1; }
+  .row-date { font-size: 10.5pt; white-space: nowrap; color: #222; padding-top: 1px; }
+
+  .org   { font-weight: bold; font-size: 11pt; }
+  .role  { font-style: italic; font-size: 10.5pt; }
+  .detail { font-size: 10.5pt; color: #222; }
+
+  ul.bul { list-style: none; padding: 0; margin-top: 2px; }
+  ul.bul li { font-size: 10.5pt; padding-left: 14px; position: relative; color: #222; }
+  ul.bul li::before { content: '•'; position: absolute; left: 2px; }
+
+  /* publications */
+  .pub { display: flex; gap: 8px; margin-bottom: 9px; align-items: flex-start; }
+  .pub:last-child { margin-bottom: 0; }
+  .pub-n { font-size: 10.5pt; white-space: nowrap; min-width: 26px; padding-top: 1px; }
+  .pub-b { flex: 1; }
+  .pub-title { font-size: 10.5pt; font-weight: bold; }
+  .pub-auth  { font-size: 10.5pt; color: #222; }
+  .pub-auth .me { text-decoration: underline; }
+  .pub-venue { font-size: 10.5pt; font-style: italic; }
+  .pub-venue b { font-style: normal; }
+
+  .cv-footer { margin-top: 36px; font-size: 9pt; color: #aaa; text-align: right; }
+
+  @media print {
+    body { padding: 36px 56px; font-size: 10.5pt; }
+  }
+</style>
+</head>
+<body>
+
+<div class="header-name">Ju-Yeong Park</div>
+<div class="header-contact">
+  <span>Cheongju, South Korea</span>
+  <span class="sep">&nbsp;✦&nbsp;</span>
+  <a href="mailto:jyjhjy0650@knue.ac.kr">jyjhjy0650@knue.ac.kr</a>
+</div>
+
+<!-- RESEARCH INTEREST -->
+<div class="section">
+  <div class="section-title">Research Interest</div>
+  <p class="detail">
+    My research interests lie in <b>Knowledge Tracing</b> — modeling the evolving knowledge states of learners through their problem-solving histories, and leveraging these representations for downstream tasks such as problem recommendation systems. My current focus is on developing a Knowledge Tracing model that moves beyond approaches relying solely on correct/incorrect response data, by incorporating students' problem-solving process data to more precisely and cognitively faithfully capture the complex cognitive processes underlying how students think and reason through problems. Furthermore, I am also interested in extending modeling techniques that reflect complex cognitive processes based on multimodal data to recommendation systems in other domains.
+  </p>
+</div>
+
+<!-- EDUCATION -->
+<div class="section">
+  <div class="section-title">Education</div>
+  <div class="row">
+    <div class="row-left">
+      <div class="org">Korea National University of Education (KNUE)</div>
+      <div class="role">B.S. in Computer Education</div>
+    </div>
+    <div class="row-date">Mar 2023 – Feb 2027</div>
+  </div>
+</div>
+
+<!-- PUBLICATIONS -->
+<div class="section">
+  <div class="section-title">Publications</div>
+
+  <div class="pub">
+    <div class="pub-n">[3]</div>
+    <div class="pub-b">
+      <div class="pub-title">HRKT: Hierarchical Recurrent Knowledge Tracing for Efficient Transformer-Based Long-Sequence Modeling</div>
+      <div class="pub-auth"><span class="me">Ju-Yeong Park</span>, Tae-Gwon Lee, Ji-Hoon Bae</div>
+      <div class="pub-venue"><b>ACM SIGKDD</b> Conference on Knowledge Discovery and Data Mining <b>(KDD 2026)</b>, Research Track</div>
+    </div>
+  </div>
+
+  <div class="pub">
+    <div class="pub-n">[2]</div>
+    <div class="pub-b">
+      <div class="pub-title"><a href="https://ai4ed.cc/workshops/aaai2026" style="color:#000; text-decoration:none;" onmouseover="this.style.textDecoration='underline'" onmouseout="this.style.textDecoration='none'">Reconstruction Attention Positional Encoding for Knowledge Tracing: Integrating Cognitive Forgetting into Transformer-Based Models</a></div>
+      <div class="pub-auth"><span class="me">Ju-Yeong Park</span>, Tae-Gwon Lee, Ji-Hoon Bae</div>
+      <div class="pub-venue">AAAI 2026 Workshop on AI4EDU <b>(AAAI 2026 Workshop)</b></div>
+    </div>
+  </div>
+
+  <div class="pub">
+    <div class="pub-n">[1]</div>
+    <div class="pub-b">
+      <div class="pub-title" style="font-family: 'NanumMyeongjo', serif; font-weight: bold;"><a href="https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003265345" style="color:#000; text-decoration:none;" onmouseover="this.style.textDecoration='underline'" onmouseout="this.style.textDecoration='none'">인지과학적 망각 효과를 반영한 트랜스포머 기반 지식 추적 모델</a></div>
+      <div class="pub-auth"><span class="me">박주영</span>, 이태권, 배지훈</div>
+      <div class="pub-venue">한국정보기술학회논문지 <span style="font-style:normal;">(The Journal of Korean Institute of Information Technology, pISSN 1598-8619)</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- COMPETITIONS & AWARDS -->
+<div class="section">
+  <div class="section-title">Competitions &amp; Awards</div>
+
+  <div class="row">
+    <div class="row-left">
+      <div class="org">The 2025 ICPC Asia Seoul Regional Onsite Contest</div>
+      <div class="role">Korea National University of Education &nbsp;·&nbsp; Honorable Mention</div>
+    </div>
+    <div class="row-date">Nov 2025</div>
+  </div>
+
+  <div class="row">
+    <div class="row-left">
+      <div class="org">LG AI Research — Food &amp; Beverage Menu Demand Forecasting AI Hackathon</div>
+      <div class="role">DACON Competition (Sponsored by LG AI Research) &nbsp;·&nbsp; Team Leader &nbsp;·&nbsp; Ranked 23 / 817 (TOP 3%)</div>
+    </div>
+    <div class="row-date">Aug 2025</div>
+  </div>
+</div>
+
+<!-- RESEARCH EXPERIENCE -->
+<div class="section">
+  <div class="section-title">Research Projects</div>
+
+  <div class="row">
+    <div class="row-left">
+      <div class="org">Korea National University of Education</div>
+      <div class="role">고장/사고 최소화를 위한 혁신 예측기술 — 원전 이차계통 환경적응형 연속학습법과 엣지컴퓨팅 신뢰성 확보 기술개발</div>
+      <ul class="bul">
+        <li>과제번호 RS-2022-00165225 | 한국연구재단(NRF) 지원</li>
+
+      </ul>
+    </div>
+    <div class="row-date">Mar 2025 – Dec 2026</div>
+  </div>
+</div>
+
+
+
+</body>
+</html>
